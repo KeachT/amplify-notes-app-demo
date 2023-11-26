@@ -1,13 +1,16 @@
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
-import { Authenticator, useAuthenticator } from '@aws-amplify/ui-react'
-import { Amplify } from 'aws-amplify'
-import awsExports from '../aws-exports'
-import { LoadingIndicator } from '../components/LoadingIndicator'
-import { MantineProvider, createTheme } from '@mantine/core'
+import '@aws-amplify/ui-react/styles.css'
 import '@mantine/core/styles.css'
 
+import { Authenticator, useAuthenticator } from '@aws-amplify/ui-react'
+import { MantineProvider, createTheme } from '@mantine/core'
+import { Amplify } from 'aws-amplify'
 import type { AppProps } from 'next/app'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+
+import awsExports from '../aws-exports'
+import { LoadingIndicator } from '../components/LoadingIndicator'
+import { checkIsLoading } from '../utils/checkIsLoading'
 
 Amplify.configure(awsExports)
 
@@ -30,9 +33,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
   const isLoading = checkIsLoading(authStatus)
 
-  console.log('authStatus', authStatus)
-  console.log('isLoading', isLoading)
-
   useEffect(() => {
     if (authStatus === 'unauthenticated') {
       router.push('/login')
@@ -45,28 +45,3 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return isLoading ? <LoadingIndicator /> : <Component {...pageProps} />
 }
-
-const checkIsLoading = (authStatus: string) =>
-  authStatus !== 'unauthenticated' && authStatus !== 'authenticated'
-
-// import React from 'react'
-// import { Amplify } from 'aws-amplify'
-
-// import { Authenticator } from '@aws-amplify/ui-react'
-// import '@aws-amplify/ui-react/styles.css'
-
-// import awsExports from '../aws-exports'
-// Amplify.configure(awsExports)
-
-// export default function App() {
-//   return (
-//     <Authenticator>
-//       {({ signOut, user }) => (
-//         <main>
-//           <h1>Hello {user?.username}</h1>
-//           <button onClick={signOut}>Sign out</button>
-//         </main>
-//       )}
-//     </Authenticator>
-//   )
-// }
