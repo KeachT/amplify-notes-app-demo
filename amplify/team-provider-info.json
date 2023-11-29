@@ -19,5 +19,26 @@
         "amplifynotesappdemo": {}
       }
     }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifynotesappdemo-prod-03258-authRole",
+      "UnauthRoleArn": "arn:aws:iam::294631303725:role/amplify-amplifynotesappdemo-prod-03258-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::294631303725:role/amplify-amplifynotesappdemo-prod-03258-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-amplifynotesappdemo-prod-03258-deployment",
+      "UnauthRoleName": "amplify-amplifynotesappdemo-prod-03258-unauthRole",
+      "StackName": "amplify-amplifynotesappdemo-prod-03258",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:294631303725:stack/amplify-amplifynotesappdemo-prod-03258/93b29150-8ecc-11ee-a9a7-0abc33d13e15",
+      "AmplifyAppId": "d2unvi0wwm9zwn"
+    },
+    "categories": {
+      "auth": {
+        "amplifynotesappdemo982ad066": {}
+      },
+      "api": {
+        "amplifynotesappdemo": {}
+      }
+    }
   }
 }
