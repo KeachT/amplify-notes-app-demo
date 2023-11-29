@@ -30,3 +30,7 @@
 Amplify バックエンド環境でのチームワークフロー
 
 https://docs.aws.amazon.com/ja_jp/amplify/latest/userguide/team-workflows-with-amplify-cli-backend-environments.html
+
+Amplify Consoleのデフォルトビルドイメージで動作するNode.jsのバージョンを変更する
+
+https://dev.classmethod.jp/articles/how-to-change-node-version-on-amplify-console/
