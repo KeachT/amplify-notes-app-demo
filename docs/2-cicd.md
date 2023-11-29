@@ -27,4 +27,6 @@
 
 ## 参考記事
 
-- Amplify バックエンド環境でのチームワークフローhttps://docs.aws.amazon.com/ja_jp/amplify/latest/userguide/team-workflows-with-amplify-cli-backend-environments.html
+Amplify バックエンド環境でのチームワークフロー
+
+https://docs.aws.amazon.com/ja_jp/amplify/latest/userguide/team-workflows-with-amplify-cli-backend-environments.html

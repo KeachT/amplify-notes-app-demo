@@ -48,8 +48,10 @@ Would you like to customize the default import alias (@/*)? … No
 
 ## 参考記事
 
-- mantine, Getting started
+mantine, Getting started
+
 https://mantine.dev/getting-started/
 
-- Amazon Amplify でウェブアプリケーションをデプロイする
+Amazon Amplify でウェブアプリケーションをデプロイする
+
 https://aws.amazon.com/jp/getting-started/guides/deploy-webapp-amplify/
