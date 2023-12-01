@@ -56,3 +56,6 @@ amplifytools.xcconfig
 .secret-*
 **.sample
 #amplify-do-not-edit-end
+
+#not share amplify settings for demo
+amplify/
